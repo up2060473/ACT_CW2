@@ -1,0 +1,180 @@
+This document serves as an explanation to the .csv file containing the data
+
+This data set was originally donated to the UCL Machine Learning Repository in 1987
+and containes 8124 different hypothetical samples corresponding to 23 species of gilled mushrooms. 
+Each one can be identified as "definately edible", "definately poisonous" or "unknown edability". 
+Mushrooms with unkown edibility are not recommended for eating, therefore have been combined with the definately poisonous category. 
+
+##### CLASS #####
+- e = definately edible
+- p = definately poisonous or unknown edibility. 
+
+##### CAP SHAPE #####
+- b = bell
+- c = conical
+- x = convex
+- f = flat
+- k = knobbed
+- s = sunken
+
+##### CAP SURFACE #####
+- f = fibrous
+- g = grooves
+- y = scaly
+- s = smooth
+
+##### CAP COLOR #####
+- n = brown
+- b = buff
+- c = cinnamon
+- g = gray
+- r = green
+- p = pink
+- u = purple
+- e = red
+- w = white
+- y = yellow
+
+##### BRIUSES #####
+- t = bruises
+- f = no bruises
+
+##### ODOR #####
+- a = almond
+- i = anise
+- c = creosote
+- y = fishy
+- f = foul
+- m = musty
+- n = none
+- p = pungent
+- s = spicy
+
+##### GILL ATTACHMENT #####
+- a = attached
+- d = descending
+- f = free
+- n = notched
+
+##### GILL SPACING #####
+- c = close
+- w = crowded
+- d = distant
+
+##### GILL SIZE #####
+- b = broad
+- n = narrow
+
+##### GILL COLOR #####
+- k = black
+- n = brown
+- b = buff
+- h = chocolate
+- g = grey
+- r = green
+- o = orange
+- p = pink
+- u = purple
+- e = red
+- w = white
+- y = yellow
+
+##### STALK SHAPE #####
+- e = enlarging
+- t = tapering
+
+##### STALK ROOT #####
+- b = bulbous
+- c = club
+- u = cup
+- e = equal
+- z = rhizomorphs
+- r = rooted
+- ? = missing
+
+##### STALK SURFACE ABOVE RING #####
+- f = fibrous
+- y = scaly
+- k = silky
+- s = smooth 
+
+##### STALK SURFACE BELOW RING #####
+- f = fibrous
+- y = scaly
+- k = silky
+- s = smooth 
+
+##### STALK COLOUR ABOVE RING #####
+- n = brown
+- b = buff
+- c = cinnamon
+- g = grey 
+- o = orange
+- p = pink
+- e = red
+- w = white
+- y = yellow
+
+##### STALK COLOUR BELOW RING #####
+- n = brown
+- b = buff
+- c = cinnamon
+- g = grey 
+- o = orange
+- p = pink
+- e = red
+- w = white
+- y = yellow
+
+##### VEIL TYPE #####
+- p = partial
+- u = universal
+
+##### VEIL COLOUR #####
+- n = brown
+- o = orange
+- w = white
+- y = yellow
+
+##### RING NUMBER #####
+- n = none
+- o = one
+- t = two
+
+##### RING TYPE #####
+- c = cobwebby
+- e = evanescent
+- f = flaring
+- l = large
+- n = none
+- p = pendant
+- s = sheathing
+- z = zone
+
+##### SPORE PRINT COLOR #####
+- k = black
+- n = brown
+- b = buff
+- h = chocolate
+- r = green
+- o = orange
+- u = purple
+- w = white
+- y = yellow
+
+##### POPULATION #####
+- a = abundant
+- c = clustered
+- n = numerous
+- s = scattered
+- v = several 
+- y = solitary
+
+##### HABITAT #####
+- g = grasses
+- l = leaves
+- m = meadows
+- p = paths
+- u = urban
+- w = waste
+- d = woods
