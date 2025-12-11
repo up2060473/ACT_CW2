@@ -1,0 +1,52 @@
+VISUALISING DATA..............##### First 5 rows of mushroom.csv ##### 
+
+class cap-shape cap-surface cap-color bruises odor gill-attachment gill-spacing gill-size gill-color stalk-shape stalk-root stalk-surface-above-ring stalk-surface-below-ring stalk-color-above-ring stalk-color-below-ring veil-type veil-color ring-number ring-type spore-print-color population habitat
+    p         x           s         n       t    p               f            c         n          k           e          e                        s                        s                      w                      w         p          w           o         p                 k          s       u
+    e         x           s         y       t    a               f            c         b          k           e          c                        s                        s                      w                      w         p          w           o         p                 n          n       g
+    e         b           s         w       t    l               f            c         b          n           e          c                        s                        s                      w                      w         p          w           o         p                 n          n       m
+    p         x           y         w       t    p               f            c         n          n           e          e                        s                        s                      w                      w         p          w           o         p                 k          s       u
+    e         x           s         g       f    n               f            w         b          k           t          e                        s                        s                      w                      w         p          w           o         e                 n          a       g
+
+
+##### mushroom.csv information ##### 
+
+       class cap-shape cap-surface cap-color bruises  odor gill-attachment gill-spacing gill-size gill-color stalk-shape stalk-root stalk-surface-above-ring stalk-surface-below-ring stalk-color-above-ring stalk-color-below-ring veil-type veil-color ring-number ring-type spore-print-color population habitat
+count   8124      8124        8124      8124    8124  8124            8124         8124      8124       8124        8124       8124                     8124                     8124                   8124                   8124      8124       8124        8124      8124              8124       8124    8124
+unique     2         6           4        10       2     9               2            2         2         12           2          5                        4                        4                      9                      9         1          4           3         5                 9          6       7
+top        e         x           y         n       f     n               f            c         b          b           t          b                        s                        s                      w                      w         p          w           o         p                 w          v       d
+freq    4208      3656        3244      2284    4748  3528            7914         6812      5612       1728        4608       3776                     5176                     4936                   4464                   4384      8124       7924        7488      3968              2388       4040    3148
+
+
+##### Shape of mushroom.csv #####
+
+(8124, 23)
+
+
+##### Any null values? #####
+
+class                       0
+cap-shape                   0
+cap-surface                 0
+cap-color                   0
+bruises                     0
+odor                        0
+gill-attachment             0
+gill-spacing                0
+gill-size                   0
+gill-color                  0
+stalk-shape                 0
+stalk-root                  0
+stalk-surface-above-ring    0
+stalk-surface-below-ring    0
+stalk-color-above-ring      0
+stalk-color-below-ring      0
+veil-type                   0
+veil-color                  0
+ring-number                 0
+ring-type                   0
+spore-print-color           0
+population                  0
+habitat                     0
+dtype: int64
+
+
