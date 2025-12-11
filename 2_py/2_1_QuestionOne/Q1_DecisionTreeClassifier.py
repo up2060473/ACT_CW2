@@ -11,7 +11,7 @@ dataFilePath = "../../1_data/mushrooms.csv"
 data = pd.read_csv(dataFilePath)
 
 # Printing summary to terminal
-input1 = input("Print out data summary? (Will still write to log file (y/n): ")
+input1 = input("Print out data summary? Will still write to log file (y/n): ")
 if input1 == "y":
     print("\n\n\nVISUALISING DATA.......................")
     print("\n\n\n##### First 5 rows of mushrooms.csv #####\n\n",data.head(),"\n\n\n")
@@ -71,10 +71,31 @@ test_predictions = clf.predict(x_test)
 train_accuracy = accuracy_score(y_train, train_predictions)
 test_accuracy = accuracy_score(y_test, test_predictions)
 
-print("Training successfull, accuracy results follow...")
+print("Training successfull...")
 print(">>> Training accuracy: ", train_accuracy)
 print(">>> Testing accuracy: ", test_accuracy, "\n")
 
 with open("./DecisionTree_log.txt", "a") as file:
     file.write("\n\n\n ##### Training Accuracy: " + str(train_accuracy) + " #####\n")
     file.write(" ##### Testing Accuracy: " + str(test_accuracy) + " #####\n")
+
+n_nodes = clf.get_depth()
+n_leaves = clf.get_n_leaves()
+model_params = clf.get_params()
+model_params_df_dt_clf = pd.DataFrame([model_params]).T
+
+input2 = input("Print out metrics and model parameters? Will still write to file (y/n):  ")
+if input2 == "y":
+    print("\n\n\n##### METRICS #####")
+    print(">>> number of nodes: ", n_nodes)
+    print(">>>number of leaves: ", n_leaves) 
+    print("\n\n\n##### MODEL PARAMETERS: #####")
+    print(model_params_df_dt_clf)
+
+with open("./DecisionTree_log.txt", "a") as file:
+    file.write("\n\n\n##### METRICS #####")
+    file.write("\n>>>number of nodes: "+str(n_nodes))
+    file.write("\n>>> number of leaves: "+str(n_leaves))
+    file.write("\n\n\n#### MODEL PARAMETERS #####")
+    file.write("\n"+str(model_params_df_dt_clf))    
+        
