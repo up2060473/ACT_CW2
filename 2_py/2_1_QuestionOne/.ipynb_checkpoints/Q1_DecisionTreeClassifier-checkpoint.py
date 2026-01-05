@@ -3,6 +3,8 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+import os
 
 print("Starting...")
 # Reading the data from the .csv file and storing in a panda data frame
@@ -97,5 +99,24 @@ with open("./DecisionTree_log.txt", "a") as file:
     file.write("\n>>>number of nodes: "+str(n_nodes))
     file.write("\n>>> number of leaves: "+str(n_leaves))
     file.write("\n\n\n#### MODEL PARAMETERS #####")
-    file.write("\n"+str(model_params_df_dt_clf))    
+    file.write("\n"+str(model_params_df_dt_clf))   
+
+print("\n\nStarting Investigation to explain accuracy scores...")
+
+importances = clf.feature_importances_
+fig, ax = plt.subplots(figsize=(8,8))
+ax.bar(range(len(importances)), importances)
+ax.set_xticks(range(len(importances)))
+ax.set_xticklabels(x.columns, rotation=45, ha="right")
+ax.set_title(f"Feature Importances for mushrooms")
+plt.tight_layout()
+os.makedirs("./investigation", exist_ok=True)
+plt.savefig("./investigation/feature_importance.png", dpi=300)
+
+with open("./investigation/investigation.txt", "w") as file:
+    for i, importance in enumerate(importances):
+        file.write(f"Feature {i}: {importance:.4f}\n")
+
+print("Feature importance written to investigation.txt")
+
         
