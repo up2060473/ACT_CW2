@@ -118,5 +118,3 @@ with open("./investigation/investigation.txt", "w") as file:
         file.write(f"Feature {i}: {importance:.4f}\n")
 
 print("Feature importance written to investigation.txt")
-
-        
